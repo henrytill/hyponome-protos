@@ -1,0 +1,5 @@
+message File {
+  required string name  = 1;
+  required int64 length = 2;
+  repeated bytes hashes = 3;
+}

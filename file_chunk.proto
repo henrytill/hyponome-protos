@@ -1,0 +1,4 @@
+message FileChunk {
+  required bytes hash = 1;
+  required bytes data = 2;
+}
