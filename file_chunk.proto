@@ -1,3 +1,8 @@
+syntax = "proto2";
+
+option java_package = "hyponome.daemon.codec";
+option java_outer_classname = "FileChunkProto";
+
 message FileChunk {
   required bytes hash = 1;
   required bytes data = 2;
