@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-option java_package = "hyponome.daemon.codec";
+option java_package = "hyponome.protobuf";
 option java_outer_classname = "FileChunkProto";
 
 message FileChunk {
