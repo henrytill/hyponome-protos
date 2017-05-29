@@ -1,10 +1,12 @@
 syntax = "proto2";
 
+import "file_info.proto";
+import "file_chunk.proto";
+
 option java_package = "hyponome.protobuf";
 option java_outer_classname = "FileProto";
 
 message File {
-  required string name  = 1;
-  required int64 length = 2;
-  repeated bytes hashes = 3;
+  optional FileInfo file = 1;
+  optional FileChunk chunk = 2;
 }
